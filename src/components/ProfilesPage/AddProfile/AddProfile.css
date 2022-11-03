@@ -1,0 +1,78 @@
+.hoverIcon{
+    /* position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; */
+    position:relative;
+    display: inline-block;
+}
+
+.hoverIcon .hoverContent{
+    /* visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  
+  opacity: 0;
+  transition: opacity 1s; */
+  opacity:0;
+  transition: opacity 0.5s;
+  visibility: hidden;
+
+  width: 200px;
+  background-color: gray;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  z-index: 1;
+  position:absolute;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.hoverIcon:hover .hoverContent::after{
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 30%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black transparent transparent transparent;
+
+}
+
+
+.hoverIcon:hover .hoverContent{
+    /* visibility: visible;
+  opacity: 1; */
+  visibility:visible;
+  opacity: 1;
+}
+
+.imgInput{
+  width:auto
+}
+
+td{
+  left:0px
+}
+
+.submitBtn{
+  justify-content: center;
+
+}
+
+.innerAddProfile{
+  display: flex;
+  flex-direction: column;
+}

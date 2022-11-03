@@ -1,0 +1,61 @@
+#cardBG{
+    position: relative;
+    font-size: 1.6rem;
+	display: grid;
+	place-items: center;
+	min-height: 200px;
+	border: 4px solid transparent;
+	padding: 1rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 3px 9px black, inset 0 0 9px white;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+/* #cardBG{
+    position: relative;
+    font-size: 1.6rem;
+	display: grid;
+	place-items: center;
+	min-height: 200px;
+	border: 8px solid;
+	padding: 1rem;
+    width: 80%;
+    height: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    border-image: linear-gradient(70deg, turquoise, greenyellow) 1;
+    box-shadow: 0 3px 9px black, inset 0 0 9px white;
+    border-radius: 16px;
+}
+#cardBG::after{ 
+    position: absolute;
+    top: -4px; bottom: -4px;
+    left: -4px; right: -4px;
+    content: '';
+    z-index: -1;
+    border-radius: 16px;
+} */
+#cardBG>table{
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+#cardBG>table>td>input{
+    background-color: yellow;
+    height: 200px;
+}
+th{
+    font-family: Courier;
+    width: 100px;
+    height:2em;
+}
+td{
+    word-wrap: break-word;
+    font-size: 18px;
+}
+
+.cardImg{
+    width: 180px;
+}
