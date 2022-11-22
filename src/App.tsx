@@ -60,7 +60,6 @@ function App() {
         </div>
         <div className="profileList item">
           <h1>Profile List</h1>
-          {/* <ProfileCard {...testObj}></ProfileCard> */}
           {profile &&
             profile.map((profile: ProfileState, i: number) => {
               return <ProfileCard key={i} {...profile}></ProfileCard>;
